@@ -62,6 +62,21 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-[#1A535C] mb-4">Asesoría para Residencia Permanente</h3>
               <p className="text-[#2D2D2D]">Te guiamos en el proceso para obtener tu residencia permanente en Canadá.</p>
             </div>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center">
+              <div className="text-[#4ECDC4] text-4xl mb-4">✈️</div>
+              <h3 className="text-xl font-semibold text-[#1A535C] mb-4">Visa de turismo</h3>
+              <p className="text-[#2D2D2D]">Te ayudamos a gestionar tu visa de turismo para que puedas disfrutar de todo lo que Canadá tiene para ofrecer, desde paisajes impresionantes hasta una cultura diversa. Nuestro equipo te guía a través de todos los requisitos y pasos del proceso.s</p>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center">
+              <div className="text-[#4ECDC4] text-4xl mb-4">🎓</div>
+              <h3 className="text-xl font-semibold text-[#1A535C] mb-4">Visa de estudiante</h3>
+              <p className="text-[#2D2D2D]">¿Estás listo para estudiar en Canadá? Te asesoramos en el proceso de solicitud de la visa de estudiante para que puedas comenzar tu carrera académica en instituciones de renombre internacional.</p>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center">
+              <div className="text-[#4ECDC4] text-4xl mb-4">👨‍⚖️</div>
+              <h3 className="text-xl font-semibold text-[#1A535C] mb-4">Asesoría para Nacionalidad</h3>
+              <p className="text-[#2D2D2D]">Si estás buscando obtener la ciudadanía canadiense, nuestro equipo te proporciona el apoyo necesario para completar tu solicitud de nacionalidad, asegurándote de cumplir con todos los requisitos legales y administrativos.</p>
+            </div>
           </div>
         </div>
       </section>
