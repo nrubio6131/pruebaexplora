@@ -1,4 +1,19 @@
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Footer from '../components/footer';
+import Image from 'next/image'; // Importa el componente Image de Next.js
+const renderLogo = (src: string | StaticImport) => {
+  return (
+    <div className="flex justify-center items-center">
+      <Image 
+        src={src} 
+        alt="Logo" 
+        width={150} 
+        height={40} 
+        className="object-contain"
+      />
+    </div>
+  );
+};
 
 export default function Home() {
   return (
@@ -6,7 +21,9 @@ export default function Home() {
       {/* Header */}
       <header className="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-[#1A535C]">Explora Canadá</h1>
+              {renderLogo('/images/EXPLORALOGO.JPG')} {/* Asegúrate de que la imagen esté en la carpeta public/images/ */}
+
+          {/* <h1 className="text-2xl font-bold text-[#1A535C]">Explora Canadá</h1> */}
           <nav>
             <ul className="flex space-x-6">
               <li><a href="#servicios" className="text-[#2D2D2D] hover:text-[#4ECDC4] transition-colors">Servicios</a></li>
