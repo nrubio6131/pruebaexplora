@@ -1,38 +1,10 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Footer from '../components/footer';
-import Image from 'next/image'; // Importa el componente Image de Next.js
-const renderLogo = (src: string | StaticImport) => {
-  return (
-    <div className="flex justify-center items-center">
-      <Image 
-        src={src} 
-        alt="Logo" 
-        width={150} 
-        height={40} 
-        className="object-contain"
-      />
-    </div>
-  );
-};
+import Header from '../components/header';
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F7FFF7]">
-      {/* Header */}
-      <header className="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-              {renderLogo('/images/EXPLORALOGO.JPG')} {/* Asegúrate de que la imagen esté en la carpeta public/images/ */}
-
-          {/* <h1 className="text-2xl font-bold text-[#1A535C]">Explora Canadá</h1> */}
-          <nav>
-            <ul className="flex space-x-6">
-              <li><a href="#servicios" className="text-[#2D2D2D] hover:text-[#4ECDC4] transition-colors">Servicios</a></li>
-              <li><a href="#quienes-somos" className="text-[#2D2D2D] hover:text-[#4ECDC4] transition-colors">¿Quiénes Somos?</a></li>
-              <li><a href="#contacto" className="text-[#2D2D2D] hover:text-[#4ECDC4] transition-colors">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Sección de Bienvenida */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-[#1A535C] to-[#4ECDC4]">
